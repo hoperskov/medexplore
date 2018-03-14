@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Тадам! - сеть пиццерий нового формата</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy|Montez" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://use.fontawesome.com/978acf80ee.js"></script>
+  	      <!--Import jQuery before materialize.js-->
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/init.js"></script>
+
+
+  <style>
+   @font-face {
+    font-family: Bebas; /* Гарнитура шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Bold.otf); /* Путь к файлу со шрифтом */
+   }
+    @font-face {
+    font-family: BebasT; /* Гарнитура шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Thin.otf); /* Путь к файлу со шрифтом */
+   }
+       @font-face {
+    font-family: BebasR; /* Гарнитура шрифта */
+    src: url(fonts/bebas_neue/BebasNeue%20Regular.otf); /* Путь к файлу со шрифтом */
+   }
+   .pere {
+    font-family: Bebas;
+	font-size:4em;
+   }
+      .pere3 {
+    font-family: BebasR;
+	font-size:2em;
+   }
+    .pere2 {
+    font-family: BebasT;
+	font-size:4em;
+   }
+   .gfgfg {
+   line-height: 2.5em;
+   }
+  </style>
+</head>
+
+    <body>
+
+	<header>
+	<div class="navbar-fixed">
+<nav class="amber accent-3 z-depth-5 nav-extended"  role="navigation">
+    <div class="nav-wrapper ">
+		  <ul id="nav-mobile" class="left hide-on-med-and-down "  style="font-family: 'BebasT'">
+<li><a href="sass.html" class="pere3">Пиццы</a></li>
+        <li><a href="badges.html" class="pere3">Напитки</a></li>
+        <li><a href="collapsible.html" class="pere3">Акции</a></li>
+        <li><a href="sass.html" class="pere3">Франшиза</a></li>
+      </ul>
+      <a id="logo-container" href="#" class="red accent-3 brand-logo center grey-text text-lighten-3" style="font-family: 'Bebas'">Тадам!</a>
+	  <ul id="nav-mobile" class="right hide-on-med-and-down" style="font-family: 'BebasT'">
+        <li class="pere3"><i class="material-icons left">call</i>8 (800) 550 5858</li>
+      </ul>
+<a href="#" data-activates="nav-mobilq" class="button-collapse nav-mobile left"><i class="material-icons">menu</i></a>
+<a href="#" data-activates="cart-mobile" class="button-collapse cart-mobile right"><i class="material-icons">shopping_cart</i></a>   
+    
+</div>
+<div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+		        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+		        <li class="tab"><a href="#test1">Test 1</a></li>
+        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  </div>
+
+<ul id="nav-mobilq" class="side-nav white">
+  <img src="img/cover2 (2).jpg" class="responsive-img">
+  <li><a class="subheader">Рестораны:</a></li>
+		<li><a href="https://www.google.com"><img src="img/McDonalds-logo.png" width="40px;">McDonalds</a></li>
+
+      </ul>
+
+
+	  
+	  <ul id="cart-mobile" class="side-nav  white">
+	  <img src="img/food-297051.png" class="responsive-img">
+
+      </ul>
+	  
+  <div class="fixed-action-btn hide-on-med-and-up"><a id="menu" class="waves-effect waves-light btn btn-floating btn-large red accent-3 hide-on-med-and-up" ><i class="material-icons">call</i></a></div>
+</header>
+  <!-- Tap Target Structure -->
+  <div class="hide-on-med-and-up">
+  <div class=" tap-target amber accent-3 white-text" data-activates="menu">
+    <div class="tap-target-content"> 
+      <h5>Позвонить нам!</h5>
+      <p>Можно просто позвонить нам и сделать заказ. Жмите на кнопку, это бесплатно!
+    </div>
+  </div></div>
+<div  class="row ">
+			<div class="valign-wrapper col s12 z-depth-1  white-text center" style="background-image: url('img/photo3.jpg'); background-size:cover; min-height:100vh;">
+			<div class="valign center-block">
+			<a class=" waves-effect waves-light btn-large pere red accent-3" onclick="Materialize.toast('Какую пиццу будем делать?', 4000, 'material-icons red accent-3')">Тадам!</a>
+			</br><span class="pere amber accent-3">Это пиццерия</span><br>
+			</div>
+			</div>
+</div>
+  <div  class="z-depth-1 row amber accent-3">
+  
+		 <div class="col s8 cards">
+  <div class="col s12 m4 l3 xl5">
+  <div class="card horizontal">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.jerrypizza.ru/upload/goods/e9babdf39e.jpg">
+	</div>
+	
+    <div class="card-content center">
+	   
+      <span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+            <a class="btn-floating waves-effect waves-light btn-small red accent-3" onclick="Materialize.toast('Гавайская пицца удалена из вашего заказа', 4000, 'material-icons red')"><i class="material-icons left">remove</i></a>
+           <a class="btn-floating waves-effect waves-light btn-small red accent-3" onclick="Materialize.toast('Гавайская пицца добавлена к вашему заказу ', 4000, 'material-icons green')"><i class="material-icons left">add</i></a>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more  on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/ff7d1418-b67f-4c90-a348-ffdc99f3bc74.jpg">
+	
+
+	</div>
+    <div class="card-content center ">
+	          
+      <span class="card-title activator grey-text text-darken-4 ">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_936_645778946_200x200.png">
+    </div>
+    <div class="card-content center">
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="responsive waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину', 1000)"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+    </div><div class="col s12 m4 l3 xl5">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/aa23a7f3-a196-439b-afa6-b159c60912b0.jpg">
+	</div>
+	
+    <div class="card-content center">
+	    <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p> <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p> <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+
+  </form>
+      <span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+            <a class="btn-floating waves-effect waves-light btn-large red accent-3" onclick="Materialize.toast('Гавайская пицца удалена из вашего заказа', 4000, 'material-icons red')"><i class="material-icons left">remove</i></a>
+           <a class="btn-floating waves-effect waves-light btn-large red accent-3" onclick="Materialize.toast('Гавайская пицца добавлена к вашему заказу ', 4000, 'material-icons green')"><i class="material-icons left">add</i></a>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/ff7d1418-b67f-4c90-a348-ffdc99f3bc74.jpg">
+	
+
+	</div>
+    <div class="card-content center ">
+	          
+      <span class="card-title activator grey-text text-darken-4 ">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_936_645778946_200x200.png">
+    </div>
+    <div class="card-content center">
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="responsive waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину', 1000)"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+    </div><div class="col s12 m4 l3 xl5">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/aa23a7f3-a196-439b-afa6-b159c60912b0.jpg">
+	</div>
+	
+    <div class="card-content center">
+	    <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p> <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p> <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input class="red-text" name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+
+  </form>
+      <span class="card-title activator grey-text text-darken-4">Гамбургер<i class="material-icons right">info_outline</i></span>
+            <a class="btn-floating waves-effect waves-light btn-large red accent-3" onclick="Materialize.toast('Гавайская пицца удалена из вашего заказа', 4000, 'material-icons red')"><i class="material-icons left">remove</i></a>
+           <a class="btn-floating waves-effect waves-light btn-large red accent-3" onclick="Materialize.toast('Гавайская пицца добавлена к вашему заказу ', 4000, 'material-icons green')"><i class="material-icons left">add</i></a>
+
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="https://dodopizzaru-a.akamaihd.net/Img/Products/Pizza/ff7d1418-b67f-4c90-a348-ffdc99f3bc74.jpg">
+	
+
+	</div>
+    <div class="card-content center ">
+	          
+      <span class="card-title activator grey-text text-darken-4 ">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+  
+    <div class="card-image waves-effect waves-block waves-light">
+	
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_915_157669035_200x200.png">
+	
+
+	</div>
+    <div class="card-content center">
+	          
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину <i>done</i>', 4000, 'material-icons green')"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div> </div>
+  <div class="col s12 m4 l3 xl5">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://stavburger.ru/images/stories/virtuemart/product/resized/product_936_645778946_200x200.png">
+    </div>
+    <div class="card-content center">
+      <span class="card-title activator grey-text text-darken-4">Гамбургер с 10 сырами<i class="material-icons right">info_outline</i></span>
+      <p><a class="responsive waves-effect waves-light btn-large deep-orange darken-4" onclick="Materialize.toast('Добавлено в корзину', 1000)"><i class="material-icons left">shopping_cart</i>В корзину</a>
+</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+    </div>
+ </div><div class="col s4 amber accent-3 row">
+   <div class="col s12">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="http://www.jerrypizza.ru/upload/goods/61303c20ce.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Маргарита</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="col s12">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="http://www.jerrypizza.ru/upload/goods/e9babdf39e.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+        
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div></div></div>
+
+<footer  class="page-footer white">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 s12">
+                <h5 class="text-darken-4">Тадам Пицца с 2017 года!</h5>
+                <p class="text-darken-2 text-lighten-4">— Зона доставки ограничена
+— Минимальная сумма заказа составляет 395 i. Заказ от 7000 i рублей можно оплатить только по карте.
+— Цены указаны без скидок
+— Лучшая цена — самая низкая цена на маленькую, среднюю или большую пиццу в меню «Додо Пиццы». Эту цену мы не сравниваем с ценами на пиццу других производителей.
+— Изображения продуктов могут отличаться от продуктов в заказе.
+— «60 минут или пицца бесплатно» - если мы не успеем доставить продукты, приготовленные в пиццерии, в течение часа, курьер подарит вам сертификат на большую пиццу.</p>
+              </div>
+              <div class="col l2 offset-l2 s12">
+                <h5 class="text-darken-4">Помощь</h5>
+                <ul>
+                  <li><a class="text-darken-4" href="#!">Франшиза</a></li>
+                  <li><a class="text-darken-4" href="#!">Правовая информация</a></li>
+                  <li><a class="text-darken-4" href="#!">О Тадам!</a></li>
+                  <li><a class="text-darken-4" href="#!">Как сделать заказ</a></li>
+				  <li><a class="text-darken-4" href="#!">Доставка</a></li>
+				  <li><a class="text-darken-4" href="#!">Оплата</a></li>
+                </ul>
+              </div>
+			                <div class="col l2 offset-l2 s12">
+                <h5 class="text-darken-4">О бренде</h5>
+                <ul>
+                  <li><a class="text-darken-4" href="#!">Франшиза</a></li>
+                  <li><a class="text-darken-4" href="#!">Правовая информация</a></li>
+                  <li><a class="text-darken-4" href="#!">О Тадам!</a></li>
+                  <li><a class="text-darken-4" href="#!">Как сделать заказ</a></li>
+				  <li><a class="text-darken-4" href="#!">Доставка</a></li>
+				  <li><a class="text-darken-4" href="#!">Оплата</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright red accent-3 z-depth-4 grey-text text-lighten-3 valign-wrapper">
+            <div class="container center">
+				  <ul id="nav-mobile" class="right hide-on-med-and-down" style="font-family: 'BebasT'">
+	   <i class="fa fa-instagram fa-3x"></i>
+	  <i class="fa fa-vk fa-3x"></i>
+	  <i class="fa fa-facebook-square fa-3x"></i>
+	  <i class="fa fa-odnoklassniki-square fa-3x"></i>
+        <i class="material-icons left">call</i>8 (800) 550 5858
+    
+			</div>
+          </div>
+        </footer>
+
+</body>
+  </html>
